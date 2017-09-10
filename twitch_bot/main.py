@@ -2,8 +2,8 @@ from twitch_bot.twitch import TChannel
 import re
 
 
-def on_message(message):
-    pass
+def on_message(obj, message):
+    print(message)
 
 
 def main():
