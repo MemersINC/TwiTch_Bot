@@ -34,6 +34,7 @@ class TChannel(threading.Thread):
             self.on_message(message)
 
     def on_message(self, message):
+        self.buffer.push(message)
         self.callback(self, message)
 
 
