@@ -1,4 +1,5 @@
 from twitch_bot.twitch import TChannel
+import re
 
 
 def on_message(message):
@@ -6,7 +7,7 @@ def on_message(message):
 
 
 def main():
-    channel = TChannel(on_message, channels=["shroud", "summit1g"])
+    channel = TChannel(on_message, channel=["shroud", "summit1g"])
     channel.join()
 
 
