@@ -1,5 +1,8 @@
 from twitch_bot.twitch import TChannel
 import re
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "..")))
 
 
 def on_message(obj, message):
